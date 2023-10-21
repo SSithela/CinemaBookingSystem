@@ -7,8 +7,6 @@ public class UserFactory {
     public static User createUser( String name, String surname, String email, String phone){
         if (Helper.isNullOrEmpty(name) || Helper.isNullOrEmpty(surname) || Helper.isNullOrEmpty(email) || Helper.isNullOrEmpty(phone)  || !Helper.isNumeric(phone))
             return null;
-
-        int userId = Helper.generateRandomId();
         if (Helper.isValidEmail(email)){
             return null;
         }
